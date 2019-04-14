@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=dev vue-cli-service serve",
-    "start:exam": "cross-env NODE_ENV=exam vue-cli-service serve",
-    "start:prod": "cross-env NODE_ENV=prod vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build:exam": "cross-env NODE_ENV=exam vue-cli-service build",
-    "build:prod": "cross-env NODE_ENV=prod vue-cli-service build",
+    "start": "vue-cli-service serve --mode dev",
+    "start:exam": "vue-cli-service serve --mode exam",
+    "start:prod": "vue-cli-service serve --mode prod",
+    "build": "vue-cli-service build --mode dev",
+    "build:exam": "vue-cli-service build --mode exam",
+    "build:prod": "vue-cli-service build --mode prod",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -23,7 +23,6 @@
     "@vue/cli-plugin-eslint": "^3.5.0",
     "@vue/cli-service": "^3.5.0",
     "babel-eslint": "^10.0.1",
-    "cross-env": "^5.2.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.5.21",
