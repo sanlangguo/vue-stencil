@@ -12,6 +12,11 @@ module.exports = {
     output: {
       filename: 'javascript/[name].[hash].js',
       chunkFilename: 'javascript/[name].[hash].js'
-    }
+    },
+    externals: {
+     'vue': 'Vue',
+     'vue-router': 'VueRouter',
+     'axios': 'axios',
+   },
   },
 };
